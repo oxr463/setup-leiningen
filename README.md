@@ -11,7 +11,7 @@ Setup your GitHub Actions workflow with Leiningen.
   uses: oxr463/setup-leiningen@0.0.1
   with:
     exec: |
-      
+      lein uberjar
 ```
 
 ## License
