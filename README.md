@@ -12,6 +12,7 @@ Setup your GitHub Actions workflow with Leiningen.
   with:
     exec: |
       lein uberjar
+      cp "$(find . -name '*.jar')" .
 ```
 
 ## License
