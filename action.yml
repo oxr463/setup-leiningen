@@ -1,0 +1,16 @@
+name: "Setup Leiningen"
+description: "Setup your GitHub Actions workflow with Leiningen."
+inputs:
+  exec:
+    description: "Leiningen command to execute"
+    required: true
+author: "oxr463"
+branding:
+  color: green
+  icon: refresh-cw
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.exec }}
