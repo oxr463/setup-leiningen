@@ -15,5 +15,4 @@ jobs:
       uses: ./
       with:
         exec: |
-          lein uberjar
-          cp "$(find . -name '*.jar')" .
+          lein help
